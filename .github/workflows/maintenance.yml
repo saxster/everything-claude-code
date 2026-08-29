@@ -1,8 +1,8 @@
 name: Scheduled Maintenance
 
 on:
-  schedule:
-    - cron: '0 9 * * 1'  # Weekly Monday 9am UTC
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
